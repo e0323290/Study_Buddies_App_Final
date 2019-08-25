@@ -16,7 +16,7 @@
             android:id="@+id/pTitleEt"
             android:background="@drawable/editextstyle"
             android:padding="10dp"
-            android:hint="Enter title"
+            android:hint="Enter module code"
             android:singleLine="true"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
@@ -42,6 +42,8 @@
         <Button
             android:id="@+id/pUploadBtn"
             style="@style/Widget.AppCompat.Button.Colored"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="@color/colorPrimaryDark"
             android:text="Upload"
             android:layout_gravity="end"
             android:layout_width="wrap_content"

@@ -14,7 +14,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="0dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="0dp"
         android:layout_marginBottom="286dp"
         android:src="@drawable/logo" />
@@ -23,24 +23,42 @@
     <Button
         android:id = "@+id/register_btn"
         android:text = "Register"
-        style="@style/Base.Widget.AppCompat.Button.Colored"
-        android:layout_width="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_above="@id/login_btn"
-        android:drawableLeft="@drawable/ic_register_white"/>
+        android:drawableLeft="@drawable/ic_register_white"
+        android:drawablePadding="2dip"
+        android:gravity="center"
+        android:drawableTint="@color/colorPrimaryDark"
+        android:textStyle="italic"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginLeft="100dp"
+        android:paddingLeft="70dp"
+        android:paddingRight="60dp"/>
 
     //Button: Login
+
     <Button
-        android:id = "@+id/login_btn"
-        android:text = "Login"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="100dp"
+        android:id="@+id/login_btn"
         style="@style/Base.Widget.AppCompat.Button.Colored"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:drawableLeft="@drawable/ic_login_white"/>
+        android:layout_marginLeft="100dp"
+        android:layout_marginBottom="160dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:drawableLeft="@drawable/ic_login_white"
+        android:drawablePadding="1dp"
+        android:drawableTint="@color/colorPrimaryDark"
+        android:paddingLeft="70dp"
+        android:paddingRight="60dp"
+        android:text="Login"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="italic" />
 
 
 </RelativeLayout>

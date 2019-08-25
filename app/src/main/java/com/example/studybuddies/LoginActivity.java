@@ -9,6 +9,7 @@ import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Html;
 import android.text.InputType;
 import android.util.Patterns;
 import android.view.View;
@@ -62,9 +63,11 @@ public class LoginActivity extends AppCompatActivity {
         //Actionbar and its title
         ActionBar actionBar = getSupportActionBar();
         actionBar.setTitle("Login");
+        //getSupportActionBar().setTitle(Html.fromHtml("<font color='#201D1D'>Login</font>"));
         //enable back button
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setDisplayShowHomeEnabled(true);
+
 
         //Before mAuth
         // Configure Google Sign In
